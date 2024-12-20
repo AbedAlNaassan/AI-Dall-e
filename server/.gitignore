@@ -1,23 +1,6 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
 # Dependency directories
 node_modules/
 
 # Local environment files
 .env
 
-# Editor directories and files
-.vscode/
-.idea/
-.DS_Store
-
-# Miscellaneous
-*.pem
-*.key
-*.crt
-coverage/
