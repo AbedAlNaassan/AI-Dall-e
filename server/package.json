@@ -4,7 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "npm run client:build && npm run build:server",
+    "build:server": "tsc"
   },
   "keywords": [],
   "author": "",
