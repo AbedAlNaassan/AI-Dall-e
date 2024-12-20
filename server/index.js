@@ -18,9 +18,5 @@ app.get("/", (req, res) => {
 app.use("/api/v1/post", postRoutes);
 app.use("/api/v1/dalle", dalleRoutes);
 
-// Vercel serverless function handler
-const handler = (req, res) => {
-  app(req, res);
-};
-
-export default handler;
+// Export Express app as the handler for Vercel
+export default app;
