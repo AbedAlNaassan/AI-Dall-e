@@ -32,7 +32,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          "dall-e-cyan-tau.vercel.app/api/v1/dalle",
+          "https://dall-e-cyan-tau.vercel.app/api/v1/dalle",
           {
             method: "POST",
             headers: {
@@ -63,13 +63,16 @@ const CreatePost = () => {
       setLoading(true);
       try {
         console.log({ ...form });
-        const response = await fetch("dall-e-cyan-tau.vercel.app/api/v1/post", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({ ...form })
-        });
+        const response = await fetch(
+          "https://dall-e-cyan-tau.vercel.app/api/v1/post",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ ...form })
+          }
+        );
 
         await response.json();
         alert("Success");
