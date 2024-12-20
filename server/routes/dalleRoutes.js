@@ -1,5 +1,6 @@
 import * as dotenv from "dotenv";
 import { OpenAI } from "openai";
+import express from "express";
 
 
 dotenv.config();
